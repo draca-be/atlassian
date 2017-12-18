@@ -2,7 +2,7 @@ FROM anapsix/alpine-java:8u152b16_jdk
 
 MAINTAINER draca <info@draca.be>
 
-ARG CONF_VERSION=6.5.2
+ARG CONF_VERSION=6.6.0
 ARG CONF_DOWNLOAD=https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-$CONF_VERSION.tar.gz
 
 ENV CONF_HOME=/opt/atlassian/confluence/data
