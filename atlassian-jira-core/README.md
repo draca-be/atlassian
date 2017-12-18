@@ -57,3 +57,34 @@ mount it over /opt/atlassian/jira/data
 Example:
 
     docker run -it --rm draca/atlassian-jira-core -p 8080:8080
+
+A very quick docker-compose file could be:
+
+```
+version: '3'
+services:
+  jira:
+    image: draca/atlassian-jira-core
+    environment:
+      - DISABLE_NOTIFICATIONS=TRUE
+      - JIRA_ARGS="-Datlassian.plugins.enable.wait=300"
+    volumes:
+      - ./data:/opt/atlassian/jira/data
+    ports:
+      - 8080:8080
+
+  jiradb:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=jira
+      - POSTGRES_DB=jira
+    volumes:
+      - ./db:/var/lib/postgresql/data
+```
+
+# Disclaimer
+
+A lot of care was taking in creating these images however running them is at your own risk and no claims can
+be made should data loss occur. By using these images you confirm that you are complying by any and all of
+the licenses of the 3rd party software included in this build.
