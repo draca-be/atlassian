@@ -1,5 +1,9 @@
 # Atlassian Confluence
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/draca/atlassian-confluence.svg)](https://hub.docker.com/r/draca/atlassian-confluence/)
+[![Build Status](https://img.shields.io/docker/build/draca/atlassian-confluence.svg)](https://hub.docker.com/r/draca/atlassian-confluence/builds/)
+[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-confluence.svg)](https://hub.docker.com/r/draca/atlassian-confluence/)
+
 This image enables you to run [Atlassian Confluence](https://www.atlassian.com/software/confluence).
 It is based on [alpine-java](https://hub.docker.com/r/anapsix/alpine-java/) to provide an as small as possible image.
 

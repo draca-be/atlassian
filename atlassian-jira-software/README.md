@@ -1,5 +1,9 @@
 # Atlassian JIRA Software
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/)
+[![Build Status](https://img.shields.io/docker/build/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/builds/)
+[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/)
+
 This image enables you to run [Atlassian JIRA Software](https://www.atlassian.com/software/jira).
 It is based on [alpine-java](https://hub.docker.com/r/anapsix/alpine-java/) to provide an as small as possible image.
 
