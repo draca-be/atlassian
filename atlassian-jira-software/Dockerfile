@@ -2,7 +2,7 @@ FROM anapsix/alpine-java:8u152b16_jdk
 
 MAINTAINER draca <info@draca.be>
 
-ARG JIRA_VERSION=7.6.1
+ARG JIRA_VERSION=7.6.2
 ARG JIRA_TYPE=software
 ARG JIRA_DOWNLOAD=https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-$JIRA_TYPE-$JIRA_VERSION.tar.gz
 
