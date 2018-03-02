@@ -67,7 +67,7 @@ A very quick docker-compose file could be:
 ```
 version: '3'
 services:
-  jira:
+  confluence:
     image: draca/atlassian-confluence
     environment:
       - DISABLE_NOTIFICATIONS=TRUE
@@ -77,7 +77,7 @@ services:
     ports:
       - 8090:8090
 
-  jiradb:
+  confluencedb:
     image: postgres:9.6
     environment:
       - POSTGRES_PASSWORD=secret
