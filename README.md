@@ -1,1 +1,1 @@
-This repository contains all kinds of docker images for Atlassian tools
+This repository is now obsolete and replaced by atlassian-generator
